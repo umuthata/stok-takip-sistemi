@@ -19,7 +19,6 @@ const ProductDetail = ({ visible, onClose, product }) => {
       const values = await form.validateFields();
       setLoading(true);
 
-      // 🔧 GÜNCELLENEN SATIR:
       await updateProduct(product.barkodu, values);
 
       message.success("Ürün güncellendi!");
@@ -59,6 +58,12 @@ const ProductDetail = ({ visible, onClose, product }) => {
             <Option value="Elektronik">Elektronik</Option>
             <Option value="Giyim">Giyim</Option>
             <Option value="Kırtasiye">Kırtasiye</Option>
+            <Option value="Temizlik">Temizlik</Option>
+            <Option value="Gıda">Gıda</Option>
+            <Option value="Mobilya">Mobilya</Option>
+            <Option value="Oyuncak">Oyuncak</Option>
+            <Option value="Kozmetik">Kozmetik</Option>
+            <Option value="Diğer">Diğer</Option>
           </Select>
         </Form.Item>
       </Form>

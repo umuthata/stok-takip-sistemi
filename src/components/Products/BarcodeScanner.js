@@ -1,14 +1,5 @@
 import React, { useState } from "react";
-import {
-  Input,
-  Button,
-  Card,
-  Descriptions,
-  Empty,
-  Spin,
-  message,
-  Space,
-} from "antd";
+import {Input,Button,Card,Descriptions,Empty,Spin,message,Space,} from "antd";
 import { BarcodeOutlined, SearchOutlined } from "@ant-design/icons";
 import { getProductByBarcode } from "../../services/productService";
 import Barcode from "react-barcode";
